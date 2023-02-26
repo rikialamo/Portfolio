@@ -28,7 +28,7 @@
 
     <!-- animate.css -->
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 
     <!-- My css -->
@@ -46,7 +46,7 @@
 
 </head>
 
-<body >
+<body>
 
 
 
@@ -85,18 +85,18 @@
 
         <div class="row">
             <div class="col">
-              <button class="btn btn-dark">Botón negro</button>
+                <button class="btn btn-dark">Botón negro</button>
             </div>
             <div class="col">
-              <button class="btn btn-primary">Botón azul</button>
+                <button class="btn btn-primary">Botón azul</button>
             </div>
             <div class="col">
-              <button class="btn btn-danger botonRojo">Botón rojo</button>
+                <button class="btn btn-danger botonRojo">Botón rojo</button>
             </div>
             <div class="col">
-              <button class="btn btn-light">Botón blanco</button>
+                <button class="btn btn-light">Botón blanco</button>
             </div>
-          </div>
+        </div>
 
         <!-- Quien soy -->
 
@@ -114,8 +114,10 @@
                             multiplataformas en la fundación Vedruna,
                             antes de esto he cursado 2 años de la carrera Ingeniería informática en sistemas de la
                             Información.</p>
-                        <p>Desde que era chico siempre me había llamado la atención la informática, pero no fue hasta segundo de bachillerato cuando 
-                            toqué por primera vez un lenguaje de programación, el cual fue Python, que no decidí que quería dedicarme a esto.
+                        <p>Desde que era chico siempre me había llamado la atención la informática, pero no fue hasta
+                            segundo de bachillerato cuando
+                            toqué por primera vez un lenguaje de programación, el cual fue Python, que no decidí que
+                            quería dedicarme a esto.
                         </p>
                     </div>
                 </div>
@@ -165,7 +167,7 @@
                 <option value="bootstrap">Bootstrap</option>
                 <option value="mysql">MySQL</option>
             </select>
-        </form> 
+        </form>
 
 
         <div class="container" id="portfolio">
@@ -174,7 +176,8 @@
                     <div class="card h-100" id="HTML CSS bootstrap">
                         <div class="card-body text-center">
                             <h5 class="card-title"><strong>Portfolio</strong></h5>
-                            <p class="card-text">Este proyecto es el mismo portfolio que estas viendo, desarrollado en <span class="HTML CSS bootstrap">HTML, CSS y bootstrap</span>
+                            <p class="card-text">Este proyecto es el mismo portfolio que estas viendo, desarrollado en
+                                <span class="HTML CSS bootstrap">HTML, CSS y bootstrap</span>
                                 contiene un resumen de mis conocimientos y lo q he realizado.</p>
                         </div>
                     </div>
@@ -183,8 +186,10 @@
                     <div class="card h-100" id="sql">
                         <div class="card-body text-center">
                             <h5 class="card-title"><strong>Base de Datos de Pokemon</strong></h5>
-                            <p class="card-text">Esta base de datos relacional <span class="mysql">MySQL</span>, la cual está todavía en desarrollo, es un proyecto personal que tengo, 
-                                la estructura fue realizada como ejercicio de clase que el profesor me pidió que expusiera y dirigiera el ejercicio</p>
+                            <p class="card-text">Esta base de datos relacional <span class="mysql">MySQL</span>, la cual
+                                está todavía en desarrollo, es un proyecto personal que tengo,
+                                la estructura fue realizada como ejercicio de clase que el profesor me pidió que
+                                expusiera y dirigiera el ejercicio</p>
                         </div>
                     </div>
                 </div>
@@ -194,7 +199,8 @@
                     <div class="card h-100" id="java">
                         <div class="card-body">
                             <h5 class="card-title"><strong>Plantas contra Zombies</strong></h5>
-                            <p class="card-text">Desarrollado en <span class="java">Java</span>, este fue el proyecto final de la asignatura de programación orientada a objetos en la UPO, 
+                            <p class="card-text">Desarrollado en <span class="java">Java</span>, este fue el proyecto
+                                final de la asignatura de programación orientada a objetos en la UPO,
                                 se trata de un juego de combate en consola de comandos</p>
                         </div>
                     </div>
@@ -220,6 +226,7 @@
                         <label for="subject" class="col-sm-2 col-form-label text-danger">Asunto:</label>
                         <div class="col-sm-10">
                             <input type="text" id="subject" class="form-control text-info" name="subject" required />
+                            <span id="subject-error" class="text-danger"></span>
                         </div>
                     </div>
 
@@ -231,6 +238,7 @@
                             </div>
                             <input type="email" id="cc" class="form-control text-info" name="cc"
                                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+                            <span id="cc-error" class="text-danger"></span>
                         </div>
                     </div>
 
@@ -238,6 +246,7 @@
                         <label for="body" class="form-label text-danger">Cuerpo del mensaje: </label> <br />
                         <textarea id="body" class="form-control text-info mt-2 w-10" name="body"
                             placeholder="Aqui va el cuerpo del mensaje..." rows="15" cols="40" required></textarea>
+                        <span id="body-error" class="text-danger"></span>
                     </div>
 
                     <div class="row g-3 mt-2 w-25 mx-auto">
