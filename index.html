@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<!-- Para cambiar de modo oscuro "dark" a modo normal, simplemente cambiarlo por "light"-->
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="description" content="Este es mi portfolio personal">
+    <meta name="keywords" content="html, css, sass, bootstrap, js, portfolio, proyectos">
+    <meta name="language" content="EN">
+    <meta name="author" content="rikialamo@gmail.com">
+    <meta name="robots" content="index,follow">
+    <meta name="revised" content="Tuesday, February 28th, 2023, 23:00pm">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome1">
+
+    <!-- Añado la fuente Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"
+        defer></script>
+
+    <!-- animate.css -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+
+    <!-- My css -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="css/personalStyles.css " rel="stylesheet" type="text/css" />
+
+    <!-- My scripts -->
+    <script type="text/javascript" src="js/app.js" defer></script>
+
+    <!-- Icono al lado del titulo -->
+    <link rel="shortcut icon" href="media/icon/logo.png" type="image/xpng">
+
+    <!-- Titulo -->
+    <title>Ricardo's portfolio</title>
+
+</head>
+
+<body >
+
+
+
+    <nav class="navbar navbar-dark bg-dark flex-row position-sticky sticky-top justify-content-center my-4">
+        <div class="navbar-brand">
+            <div class="icon ms-3 bg-black"><img src="media/icon/logo.png" class="img-fluid" alt=""></div>
+        </div>
+        <div class="navbar-nav flex-row align-items-center w-100 justify-content-center">
+            <a class="nav-link mx-3 animate__animated animate__swing" href="#quienSoy">Quien soy</a>
+            <a class="nav-link mx-3 animate__animated animate__swing" href="#sobreMi">Sobre mí </a>
+            <a class="nav-link mx-3 animate__animated animate__swing" href="#portfolio">Portfolio</a>
+            <a class="nav-link mx-3 animate__animated animate__swing" href="#contacto">Contacto</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- Quien soy -->
+
+        <h1 id="quienSoy" class="my-5 titulo text-center">Quien soy</h1>
+
+        <div class="card w-70 mx-auto my-8">
+            <div class="row g-0">
+                <div class="col-md-4 ">
+                    <img src="media/img/MiiAvatar.png" class="card-img " alt="Sevilla">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body text-center">
+                        <h4 class="card-title"><strong>Ricardo Álamo Fernández</strong></h4>
+                        <p class="card-text">Soy un estudiante del ciclo de grado superior de desarrollo de aplicaciones
+                            multiplataformas en la fundación Vedruna,
+                            antes de esto he cursado 2 años de la carrera Ingeniería informática en sistemas de la
+                            Información.</p>
+                        <p>Desde que era chico siempre me había llamado la atención la informática, pero no fue hasta segundo de bachillerato cuando 
+                            toqué por primera vez un lenguaje de programación, el cual fue Python, que no decidí que quería dedicarme a esto.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Sobre mi -->
+
+
+        <h1 id="sobreMi" class="titulo my-5 text-center">Sobre mí</h1>
+
+        <div class="row justify-content-center ">
+            <div class="col-sm-4">
+                <div class="card h-100" id="card">
+                    <div class="card-body text-center">
+                        <h4 class="card-title"><strong>Historial</strong></h4>
+                        <p class="card-text">He trabajado durante unos meses en la empresa Ridetel, en un almacén de
+                            material electrico.</p>
+                        <p class="card-text">Además, como indiqué anteriormente, he cursado 2 años de Ing. Informatica y
+                            estoy estudiando el CCFF de Desarrollo de aplicaciones multiplataforma.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="card h-100" id="card">
+                    <div class="card-body text-center">
+                        <h4 class="card-title"><strong>Herramientas</strong></h4>
+                        <p class="card-text">Conocimientos en lenguajes backend: Java, Python, C, ARM, MySQL.</p>
+                        <p class="card-text">Conocimientos en lenguajes frontend: HTML, CSS, Javascript, Bootstrap.</p>
+                        <p class="card-text">Nivel certificado Ingles: B1</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio -->
+
+        <h1 id="portfolio" class="my-5 titulo text-center">Portfolio</h1>
+
+        <form class="w-50 mx-auto my-5">
+            <select name="modulo" id="modulo" class="form-control text-center">
+                <option value="all">All</option>
+                <option value="java">Java</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="bootstrap">Bootstrap</option>
+                <option value="mysql">MySQL</option>
+            </select>
+        </form> 
+
+
+        <div class="container">
+            <div class="row justify-content-center my-4">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><strong>Portfolio</strong></h5>
+                            <p class="card-text">Este proyecto es el mismo portfolio que estas viendo, desarrollado en <span class="HTML CSS bootstrap">HTML, CSS y bootstrap</span>
+                                contiene un resumen de mis conocimientos y lo q he realizado.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <h5 class="card-title"><strong>Base de Datos de Pokemon</strong></h5>
+                            <p class="card-text">Esta base de datos relacional <span class="mysql">MySQL</span>, la cual está todavía en desarrollo, es un proyecto personal que tengo, 
+                                la estructura fue realizada como ejercicio de clase que el profesor me pidió que expusiera y dirigiera el ejercicio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title"><strong>Plantas contra Zombies</strong></h5>
+                            <p class="card-text">Desarrollado en <span class="java">Java</span>, este fue el proyecto final de la asignatura de programación orientada a objetos en la UPO, 
+                                se trata de un juego de combate en consola de comandos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Contact -->
+
+
+        <h1 id="contacto" class="my-5 titulo text-center">Contacto</h1>
+
+
+        <div id="contact" class="container my-5">
+            <form action="mailto:tuMail@vedruna.es" method="get" class="mt-2 mx-auto">
+                <fieldset class="form-row reset p-4 align-items-center border border-danger ">
+                    <legend class="reset text-light border border-danger px-2 py-1">Contact me</legend>
+
+                    <div class="form-group row g-3 mt-1 mx-auto">
+                        <label for="subject" class="col-sm-2 col-form-label text-danger">Asunto:</label>
+                        <div class="col-sm-10">
+                            <input type="text" id="subject" class="form-control text-info" name="subject" required />
+                        </div>
+                    </div>
+
+                    <div class="form-group row g-3 mt-1 mx-auto">
+                        <label for="cc" class="col-sm-2 col-form-label text-danger">CC:</label>
+                        <div class="col input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">@</div>
+                            </div>
+                            <input type="email" id="cc" class="form-control text-info" name="cc"
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+                        </div>
+                    </div>
+
+                    <div class="row g-3 mt-2 mx-auto">
+                        <label for="body" class="form-label text-danger">Cuerpo del mensaje: </label> <br />
+                        <textarea id="body" class="form-control text-info mt-2 w-10" name="body"
+                            placeholder="Aqui va el cuerpo del mensaje..." rows="15" cols="40" required></textarea>
+                    </div>
+
+                    <div class="row g-3 mt-2 w-25 mx-auto">
+                        <input id="sendBttn" class="btn btn-danger btn-lg" type="submit" value="Send" />
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+
+    <p class="text-center my-5">&copy; 2023 Ricardo Álamo Fernández</p>
+
+
+</body>
+
+</html>
