@@ -1,0 +1,105 @@
+
+
+
+@media (min-width: 576px) { 
+  html{
+    font-size: 0.6rem;
+  }
+}
+@media (min-width: 768px) {
+  html{
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 992px) {
+  html{
+    font-size: 1rem;
+  }
+}
+@media (min-width: 1200px) { 
+  html{
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1400px) {
+  html{
+    font-size: 1.4rem;
+  }
+}
+
+
+
+.navbar-nav {
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-item {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+
+  .navbar-nav .nav-link:hover {
+    color: #fff;
+    background-color: #E20505;
+  }
+
+  .navbar-brand .icon {
+
+    width: 50px;
+    height: 50px;
+    margin: 10px auto;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+
+  .navbar-brand .icon i {
+    color: #E20505;
+    font-size: 2rem;
+    line-height: 50px;
+    text-align: center;
+  }
+
+  .icon-lg {
+    font-size: 2rem;
+  }
+  
+  .my-4 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  fieldset{
+    border-color: #E20505;
+  }
+
+  .titulo:hover{
+    color: #E20505;
+  }
+
+  .card:hover{
+
+    box-shadow: 3px 3px 6px 3px #E20505;
+
+  }
+
+form:has(select > option[value="java"]:checked) + .container p .java,
+form:has(select > option[value="HTML"]:checked) + .container p .HTML,
+form:has(select > option[value="CSS"]:checked) + .container p .CSS,
+form:has(select > option[value="bootstrap"]:checked) + .container p .bootstrap, 
+form:has(select > option[value="mysql"]:checked) + .container p .mysql {
+    color: #E20505;
+    animation: flash;
+    animation-duration: 2s;
+}
+

@@ -1,0 +1,254 @@
+
+
+/*INICIAL (Bootstrap lo trae por defecto)*/
+/* 
+@charset "UTF-8";
+
+:root {
+    --scheme-color1: #F8F8FF;
+    --scheme-color2: #CACACA;
+    --scheme-color3: #9B9B9B;
+    --scheme-color4: #6D6D6D;
+    --scheme-color5: #3E3E3E;
+    --scheme-color6: #1E1E1E;
+    --main-font: 'Roboto', sans-serif;
+    --main-font-color: #181818;
+    --secondary-font-color: #f0f0f0;
+    --main-font-color-soft: #181818B3;
+    --secondary-font-color-soft: #f0f0f0B3;
+    --rem-value: 10px;
+    --font-size: 16px;
+    --spaces: 1rem;
+    --success-color: #28a745!important;
+    --danger-color: #bd2130!important;
+    --warning-color: #ffc107!important;
+    --info-color: aquamarine!important;
+    --bttn-color: #007bff!important;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --main-font-color: #f0f0f0;
+        --secondary-font-color: #181818;
+        --main-font-color-soft: #f0f0f0B3;
+        --secondary-font-color-soft: #181818B3;
+        --scheme-color1: #1E1E1E;
+        --scheme-color2: #3E3E3E;
+        --scheme-color3: #6D6D6D;
+        --scheme-color4: #9B9B9B;
+        --scheme-color5: #CACACA;
+        --scheme-color6: #F8F8FF;
+    }
+}
+
+@media (prefers-contrast: high) {
+    :root {
+        --main-font-color: black;
+        --secondary-font-color: white;
+        --success-color: green!important;
+        --danger-color: red!important;
+        --warning-color: yellow!important;
+        --info-color: aqua!important;
+        --bttn-color: blue!important;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    * {
+        -webkit-animation: none !important;
+        animation: none !important;
+        -webkit-transition: none !important;
+        transition: none !important;
+    }
+}
+
+html {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    font-size: var(--rem-value);
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    font-family: var(--main-font);
+    font-size: var(--font-size);
+    line-height: 1.4em;
+    color: var(--main-font-color);
+    background-color: var(--scheme-color1);
+    min-height: 100vh;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+    margin: 0.5em 0;
+}
+
+mark {
+    color: var(--main-font-color);
+    background-color: var(--info-color);
+}
+
+address {
+    display: inline;
+}
+
+blockquote:before {
+    content: "“";
+}
+
+blockquote:after {
+    content: "”";
+}
+
+blockquote,
+q {
+    color: var(--main-font-color-soft);
+    font-style: italic;
+}
+
+blockquote {
+    margin: 0.5em 1em;
+}
+
+p a {
+    display: inline;
+}
+
+a {
+    display: block;
+}
+
+ol, ul {
+    padding: 0 calc(2 * 1em);
+}
+
+::selection,
+::-moz-selection {
+    background-color: var(--main-font-color);
+    color: var(--secondary-font-color);
+}
+
+table,
+tr,
+td,
+th {
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: solid 1px black;
+    text-align: center;
+}
+
+form, input:not([type="checkbox"], [type="radio"]), textarea, select, button, label {
+    font-family: inherit;
+    font-size: inherit;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+    display: block;
+    
+}
+
+label {
+    display:inline;
+}
+
+legend {
+    font-family: inherit;
+    font-size: inherit;
+    border: 2px solid grey;
+}
+
+img,
+picture,
+video,
+iframe,
+figure,
+audio {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    -o-object-fit: cover;
+    object-fit: cover;
+    -o-object-position: center center;
+    object-position: center center;
+}
+
+figcaption {
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0 1em;
+    color: var(--main-font-color-soft);
+    font-style: italic;
+}
+
+svg {
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.container {
+    min-width: min(90%, 1200px);
+}
+
+.container-full {
+    width: 100%;
+}
+
+.container-bp {
+    max-width: 100%;
+}
+
+@media (min-width: 576px) {
+    .container-bp {
+        max-width: 90%;
+    }
+}
+
+@media (min-width: 768px) {
+    .container-bp {
+        max-width: 768px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container-bp {
+        max-width: 992px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container-bp {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-bp {
+        max-width: 1400px;
+    }
+}
+
+*/
