@@ -25,3 +25,26 @@ whiteButton.addEventListener('click', () => {
     document.body.style.backgroundColor = 'white';
     
 });
+
+
+// Ejercicio 2
+
+let selectElement = document.getElementById('modulo');
+let cardElements = document.querySelectorAll('.card');
+
+selectElement.addEventListener('change', (event) => {
+
+  let selectedModule = event.target.value;
+  cardElements.forEach((card) => {
+    
+    if (selectedModule === 'all') {
+      card.classList.remove('d-none');
+    } else if (card.querySelector(`.${selectedModule}`)) {
+      card.classList.remove('d-none');
+    } else {
+      card.classList.add('d-none');
+    }
+  });
+});
+
+
